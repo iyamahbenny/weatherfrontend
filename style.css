@@ -25,6 +25,7 @@
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+  position: relative;
 }
 #lefthand {
   width: 70%;
@@ -264,6 +265,9 @@
   }
 }
 @media only screen and (max-width: 800px) {
+  #bottomleft > div:first-child {
+    font-size: 30px;
+  }
   #maindiv {
     flex-direction: column;
   }
