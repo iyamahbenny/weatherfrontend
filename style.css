@@ -1,0 +1,377 @@
+* {
+  margin: 0%;
+  padding: 0;
+  border: none;
+  font-family: Poppins;
+}
+#maindiv {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("istockphoto-1157189649-612x612.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#righthand {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.1px);
+  -webkit-backdrop-filter: blur(12.1px);
+  width: 30%;
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+#lefthand {
+  width: 70%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#bottomleft {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+#bottomleft > div:last-child {
+  font-size: 20px;
+}
+#bottomleft > div:nth-child(2) > p:first-child {
+  font-size: 50px;
+}
+#bottomleft > div:nth-child(2) > p:nth-child(2) {
+  font-size: 20px;
+}
+#bottomleft > div {
+  padding-right: 40px;
+}
+#bottomleft > div:first-child {
+  font-size: 100px;
+}
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(173, 169, 169);
+}
+#login > a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#righthand > div:first-child {
+  margin-top: 50px;
+}
+#righthand > div:last-child {
+  margin-bottom: 50px;
+}
+#searchicon {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(154, 233, 233);
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+}
+#input {
+  width: 80%;
+  padding: 10px 0px;
+  color: rgb(173, 169, 169);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(173, 169, 169);
+}
+#input::placeholder {
+  color: rgb(173, 169, 169);
+}
+#locations {
+  font-size: 20px;
+  color: rgb(161, 140, 140);
+}
+
+#locations > p {
+  padding: 10px 0px;
+  cursor: pointer;
+}
+#details {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+#weather {
+  font-size: 20px;
+  color: rgb(173, 169, 169);
+}
+#weather > p {
+  padding: 10px 0px;
+}
+.registerinput {
+  border: 1px solid black;
+  display: block;
+}
+#register {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.sign {
+  border: 1px solid black;
+}
+#parentdiv {
+  width: 100%;
+  height: 100vh;
+}
+
+#weather > p > span {
+  color: white;
+  float: right;
+}
+
+#popup {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#message {
+  width: 60%;
+  padding: 50px;
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 30px;
+  position: relative;
+}
+#cancel {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+#createaccount {
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(187, 68, 21);
+}
+.registerinput,
+.logininput {
+  border: 1px solid black;
+  display: block;
+  margin-top: 30px;
+  padding-left: 30px;
+  width: 400px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 8px;
+  outline-color: rgb(143, 94, 75);
+}
+#register {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+  margin-top: 30px;
+}
+.anchor {
+  width: 90%;
+}
+.sign {
+  border: 1px solid rgb(187, 68, 21);
+  width: 90%;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#signin {
+  color: rgb(187, 68, 21);
+  background-color: white;
+  float: right;
+}
+#signup {
+  background-color: rgb(187, 68, 21);
+  color: white;
+}
+#parentdiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+#leftside {
+  height: 100vh;
+  width: 60%;
+  display: grid;
+  place-items: center;
+}
+#rightside {
+  height: 100vh;
+  width: 40%;
+  background-image: url("beautifulimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1270px) {
+  #bottomleft > div:nth-child(2) > p:first-child {
+    font-size: 30px;
+  }
+  #bottomleft > div:first-child {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  #bottomleft > div:nth-child(2) > p:first-child {
+    font-size: 25px;
+  }
+  #bottomleft > div:first-child {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  #bottomleft > div:nth-child(2) > p:first-child {
+    font-size: 20px;
+  }
+  #bottomleft > div:first-child {
+    font-size: 40px;
+  }
+  #bottomleft > div:nth-child(2) > p:nth-child(2) {
+    font-size: 15px;
+  }
+  #bottomleft > div:last-child {
+    font-size: 15px;
+  }
+  #imgsrc {
+    width: 35px;
+    height: 35px;
+  }
+  #searchicon {
+    width: 90px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #maindiv {
+    flex-direction: column;
+  }
+  #lefthand {
+    width: auto;
+    height: 35%;
+  }
+  #righthand {
+    width: auto;
+    padding: 0px;
+  }
+  #righthandfirstchild {
+    padding-left: 50px;
+  }
+  #locations,
+  #details,
+  #weather {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .hr {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #righthandfirstchild {
+    padding-left: 20px;
+  }
+  #locations,
+  #details,
+  #weather {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hr {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #lefthand {
+    padding: 20px;
+  }
+  #locations > p {
+    padding: 5px 0px;
+  }
+  #weather > p {
+    padding: 5px 0px;
+  }
+  #weather {
+    font-size: 15px;
+  }
+  #searchicon {
+    width: 70px;
+    height: 70px;
+  }
+  #righthand > div:first-child {
+    margin-top: 20px;
+  }
+  #righthand > div:last-child {
+    margin-bottom: 20px;
+  }
+  #locations {
+    font-size: 15px;
+  }
+
+  #bottomleft > div {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 731px) {
+  #rightside {
+    display: none;
+  }
+  #leftside {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #leftside {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #createaccount {
+    font-size: 20px;
+  }
+  .registerinput,
+  .logininput,
+  .sign {
+    font-size: 15px;
+    height: 50px;
+    width: 85%;
+  }
+  #inputt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #register {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 367px) {
+  #createaccount {
+    font-size: 12px;
+  }
+}

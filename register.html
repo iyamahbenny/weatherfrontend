@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="parentdiv">
+      <div id="leftside">
+        <div id="block">
+          <div id="createaccount"><h1>Create Account</h1></div>
+          <div id="inputt">
+            <input
+              id="registername"
+              class="registerinput"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              id="registeremail"
+              class="registerinput"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              id="registerpassword"
+              class="registerinput"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
+          <div id="register">
+            <button onclick="registerfunction()" id="signup" class="sign">
+              Sign up
+            </button>
+
+            <a href="login.html" class="anchor"
+              ><button id="signin" class="sign">Sign in</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="rightside"></div>
+    </div>
+
+    <script src="register.js"></script>
+  </body>
+</html>
