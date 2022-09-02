@@ -224,6 +224,7 @@
   background-image: url("beautifulimage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 50px;
 }
 
 @media only screen and (max-width: 1270px) {
@@ -265,9 +266,6 @@
   }
 }
 @media only screen and (max-width: 800px) {
-  #bottomleft > div:first-child {
-    font-size: 30px;
-  }
   #maindiv {
     flex-direction: column;
   }
@@ -374,8 +372,14 @@
   }
 }
 
-@media only screen and (max-width: 367px) {
+@media only screen and (max-width: 370px) {
   #createaccount {
     font-size: 12px;
+  }
+  #weather {
+    height: 60px;
+  }
+  #input {
+    padding: 30px;
   }
 }
