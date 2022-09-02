@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="maindiv">
+      <div id="lefthand">
+        <div>
+          <p id="login"><a href="login.html" id="loginhref">Login</a></p>
+        </div>
+        <div id="bottomleft">
+          <div>
+            <div>
+              <span id="Domtemp">08</span>
+              <sup>o</sup>
+            </div>
+          </div>
+
+          <div>
+            <p id="Domlocation">Location</p>
+            <p id="Domdate">date</p>
+          </div>
+
+          <div>
+            <div><img id="imgsrc" src="" alt="" /></div>
+            <div id="Domweather">Rainy</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="righthand">
+        <div id="righthandfirstchild">
+          <input
+            type="search"
+            name=""
+            id="input"
+            placeholder="Search location"
+          />
+        </div>
+        <div id="searchicon"><i class="fa fa-magnifying-glass"></i></div>
+
+        <div id="locations">
+          <p onclick="apiCall('abuja')">Abuja</p>
+
+          <p onclick="apiCall('Lagos')">Lagos</p>
+
+          <p onclick="apiCall('Benin City')">Benin City</p>
+
+          <p onclick="apiCall('Sokoto')">Sokoto</p>
+        </div>
+        <div class="hr"></div>
+
+        <h2 id="details">Weather Details</h2>
+        <div id="weather">
+          <p>
+            Cloudy <span> <span id="cloudy"></span> <span>%</span> </span>
+          </p>
+
+          <p>
+            Humidity
+            <span> <span id="humidity"></span> <span> % </span> </span>
+          </p>
+          <p>
+            Wind <span><span id="speed"></span> <span> km/h </span></span>
+          </p>
+
+          <p>
+            Pressure <span> <span id="pressure"></span> <span>mm</span> </span>
+          </p>
+        </div>
+        <div class="hr"></div>
+      </div>
+    </div>
+    <div id="popup">
+      <div id="message">
+        Location not found
+        <span
+          id="cancel"
+          onclick="document.getElementById('popup').style.display='none'"
+          ><i class="fa fa-xmark"></i
+        ></span>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>

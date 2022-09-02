@@ -12,7 +12,7 @@ const loginfunction = async () => {
     .then((response) => response.json())
     .then((result) => {
       console.log(result);
-      window.location.href = `/weather.html?user=${result}`;
+      window.location.href = `/index.html?user=${result}`;
     })
     .catch((error) => console.log("error", error));
 };

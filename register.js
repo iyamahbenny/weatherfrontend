@@ -13,6 +13,6 @@ const registerfunction = async () => {
     }),
   })
     .then((response) => response.json())
-    .then((result) => (window.location.href = `/weather.html?user=${result}`))
+    .then((result) => (window.location.href = `/index.html?user=${result}`))
     .catch((error) => console.log("error", error));
 };
